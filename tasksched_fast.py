@@ -17,7 +17,7 @@ class TaskScheduler(object):
         self.ntasks += 1
 
     def _task_by_id(self, id):
-        return self._tasks_by_id(id - 1)
+        return self._tasks_by_id[id - 1]
 
     def _task_by_rank(self, rank):
         return self._tasks_by_rank[rank - 1]
